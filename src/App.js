@@ -4,7 +4,7 @@ function App() {
   const [msg, setMsg] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:9090/hello")
+    fetch("https://demo-backend-production-66c8.up.railway.app/hello")
       .then(res => res.text())
       .then(setMsg)
       .catch(console.error);
